@@ -2,7 +2,7 @@ import os
 import subprocess
 import requests
 
-UPDATE_URL = "https://raw.githubusercontent.com/your-username/rain-of-blocks-updates/main/version.txt"
+UPDATE_URL = "https://raw.githubusercontent.com/AftabJ09/rain-of-blocks-updates/main/version.txt"
 LOCAL_VERSION_FILE = "game_versions/v1.0/version.txt"
 GAME_EXECUTABLE = "game_versions/v1.0/game.py"  # path to your main game file
 
