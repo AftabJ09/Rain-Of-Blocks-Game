@@ -3,10 +3,13 @@ from tkinter import messagebox
 import requests, zipfile, io, os, shutil
 import subprocess
 
-ZIP_URL = "https://github.com/your-username/rain-of-blocks-updates/raw/main/Rain-of-Blocks-v1.1.zip"
+ZIP_URL = "https://github.com/AftabJ09/rain-of-blocks-updates/raw/main/Rain-of-Blocks-v1.1.zip"
 DEST_FOLDER = "game_versions/v1.0"
 VERSION_FILE = "game_versions/v1.0/version.txt"
-NEW_VERSION = "1.1"
+UPDATE_URL = "https://raw.githubusercontent.com/AftabJ09/rain-of-blocks-updates/main/version.txt"
+response = requests.get(UPDATE_URL)
+NEW_VERSION = response.text.strip()  
+
 
 def download_and_replace():
     response = requests.get(ZIP_URL)
