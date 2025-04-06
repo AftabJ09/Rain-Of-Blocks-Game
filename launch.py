@@ -22,7 +22,7 @@ def check_for_update():
         return None  # if offline or failed
 
 def run_updater():
-    subprocess.run(["python", "updater.py"])
+    subprocess.run(["python", "update.py"])
 
 def run_game():
     subprocess.run(["python", GAME_EXECUTABLE])
