@@ -23,20 +23,20 @@ myfont = pygame.font.SysFont(None, 25,'#ffffff')
 myfont1 = pygame.font.SysFont('Segoe UI',15,'#ffffff',italic=True)
 
 
-intro_image = pygame.image.load(resources_path('assets/intro_image.jpg'))
+intro_image = pygame.image.load(resources_path('game_versions/v1.0/assets/intro_image.jpg'))
 intro_image = pygame.transform.scale(intro_image, (180,360))
-heart_img = pygame.image.load(resources_path('assets/heart.png'))
+heart_img = pygame.image.load(resources_path('game_versions/v1.0/assets/heart.png'))
 heart_img = pygame.transform.scale(heart_img, (20, 20))
-icon = pygame.image.load('assets/game_icon.png')
+icon = pygame.image.load('game_versions/v1.0/assets/game_icon.png')
 pygame.display.set_icon(icon)
 
 
-pygame.mixer.music.load(resources_path('assets/intro_music.mp3'))
-pop_sound = pygame.mixer.Sound(resources_path('assets/box_collison_sound.wav'))
-warning = pygame.mixer.Sound(resources_path('assets/warning.mp3'))
+pygame.mixer.music.load(resources_path('game_versions/v1.0/assets/intro_music.mp3'))
+pop_sound = pygame.mixer.Sound(resources_path('game_versions/v1.0/assets/box_collison_sound.wav'))
+warning = pygame.mixer.Sound(resources_path('game_versions/v1.0/assets/warning.mp3'))
 
 
-file_path = resources_path("config/person_data.json")
+file_path = resources_path("game_versions/v1.0/config/person_data.json")
 tile_position = 20
 tile_width = 50
 object_position = 20
